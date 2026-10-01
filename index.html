@@ -61,6 +61,12 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
 
+  <style>
+    /* Логотип в шапке */
+    .header-logo { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: inline-flex; align-items: center; line-height: 0; z-index: 1; }
+    .header-logo img { height: 56px; width: auto; display: block; }
+    @media (max-width: 575px) { .header-logo img { height: 44px; } }
+  </style>
 </head>
 
 
@@ -92,11 +98,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <div class="header-social-links">
-        <a href="#" class="header-social-links__icon header-social-links__icon--tg" onclick="openTelegramModal(); return false;" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
-        <a href="#" class="header-social-links__icon header-social-links__icon--wa" onclick="openWhatsAppModal(); return false;" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-        <a href="https://vk.me/tattoo_sketchs1" class="header-social-links__icon header-social-links__icon--vk" aria-label="ВКонтакте"><i class="fab fa-vk"></i></a>
-      </div>
+      <a href="http://tattoosketch-irina.ru/" class="header-logo" aria-label="Эскиз тату — на главную"><img src="assets/img/logo-header.png" alt="Эскиз тату" width="78" height="56"></a>
 
     </div>
   </header>
